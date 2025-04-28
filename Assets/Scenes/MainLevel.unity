@@ -153,6 +153,7 @@ MonoBehaviour:
   - {fileID: 3497344599405428948, guid: 815bb79e1e5439f4894542cc45ede48c, type: 3}
   - {fileID: 6170633100462930275, guid: c26a40a62eb81d64ba81e7e797b8745d, type: 3}
   - {fileID: 8155070860051802248, guid: 9e0fe6a40fd412843918382958f863a9, type: 3}
+  - {fileID: 6946473003023608621, guid: 93a93e151c712e7449ed6d0255ee0a9f, type: 3}
   obstacleSpawnTime: 1
   obstacleParent: {fileID: 527152529}
   spawnWidth: 4
