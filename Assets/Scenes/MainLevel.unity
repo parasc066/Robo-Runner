@@ -151,9 +151,8 @@ MonoBehaviour:
   obstaclePrefabs:
   - {fileID: 4441052436686682037, guid: 477db809d4cc0f444814b6ec26f165c9, type: 3}
   - {fileID: 3497344599405428948, guid: 815bb79e1e5439f4894542cc45ede48c, type: 3}
-  - {fileID: 6170633100462930275, guid: c26a40a62eb81d64ba81e7e797b8745d, type: 3}
-  - {fileID: 8155070860051802248, guid: 9e0fe6a40fd412843918382958f863a9, type: 3}
   - {fileID: 6946473003023608621, guid: 93a93e151c712e7449ed6d0255ee0a9f, type: 3}
+  - {fileID: 8155070860051802248, guid: 9e0fe6a40fd412843918382958f863a9, type: 3}
   obstacleSpawnTime: 1
   obstacleParent: {fileID: 527152529}
   spawnWidth: 4
@@ -505,6 +504,7 @@ MonoBehaviour:
   chunkParent: {fileID: 527152529}
   chunkLength: 10
   moveSpeed: 8
+  minMoveSpeed: 2
 --- !u!4 &831323102
 Transform:
   m_ObjectHideFlags: 0
@@ -894,6 +894,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 698221868}
+  collisionCooldown: 1
+  adjustChangeMoveSpeedAmount: -2
 --- !u!136 &1591560303
 CapsuleCollider:
   m_ObjectHideFlags: 0
