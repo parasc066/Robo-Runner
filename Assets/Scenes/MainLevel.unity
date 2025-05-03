@@ -534,11 +534,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraController: {fileID: 1150751977}
   chunkPrefab: {fileID: 3097631542326048024, guid: b317acd6ac194924c847b5a061583024, type: 3}
-  startingChunksAmount: 12
   chunkParent: {fileID: 527152529}
+  startingChunksAmount: 12
   chunkLength: 10
   moveSpeed: 8
   minMoveSpeed: 2
+  maxMoveSpeed: 20
+  minGravityZ: -22
+  maxGravityZ: -2
 --- !u!4 &831323102
 Transform:
   m_ObjectHideFlags: 0
@@ -788,7 +791,7 @@ ParticleSystemRenderer:
   m_ApplyActiveColorSpace: 1
   m_AllowRoll: 1
   m_FreeformStretching: 1
-  m_RotateWithStretchDirection: 0
+  m_RotateWithStretchDirection: 1
   m_UseCustomVertexStreams: 0
   m_VertexStreams: 00010304
   m_UseCustomTrailVertexStreams: 0
