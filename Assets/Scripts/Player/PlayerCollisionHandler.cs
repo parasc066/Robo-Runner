@@ -13,10 +13,13 @@ public class PlayerCollisionHandler : MonoBehaviour
 
     LevelGenerator levelGenerator;
 
+    CapsuleCollider capsuleCollider;
+
 
     void Start()
     {
         levelGenerator = FindFirstObjectByType<LevelGenerator>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
     }
 
     void Update()
@@ -29,8 +32,9 @@ public class PlayerCollisionHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (cooldownTimer < collisionCooldown) return;
+            capsuleCollider.enabled = false;
             animator.SetTrigger(ANIMATOR_TRIGGER_JUMP);
+            capsuleCollider.enabled = true;
             cooldownTimer = 0f;
         }
     }
