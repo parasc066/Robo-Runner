@@ -149,11 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 4441052436686682037, guid: 477db809d4cc0f444814b6ec26f165c9, type: 3}
   - {fileID: 3497344599405428948, guid: 815bb79e1e5439f4894542cc45ede48c, type: 3}
-  - {fileID: 6946473003023608621, guid: 93a93e151c712e7449ed6d0255ee0a9f, type: 3}
+  - {fileID: 4465663221388887703, guid: 0d6f1572b01669642aa8fece23d37d84, type: 3}
   - {fileID: 8155070860051802248, guid: 9e0fe6a40fd412843918382958f863a9, type: 3}
-  obstacleSpawnTime: 2
+  obstacleSpawnTime: 3
   obstacleParent: {fileID: 527152529}
   spawnWidth: 4
 --- !u!4 &83952605
