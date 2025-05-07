@@ -8,6 +8,7 @@ public class PlayerCollisionHandler : MonoBehaviour
     [SerializeField] float adjustChangeMoveSpeedAmount = -2f;
 
     const string ANIMATOR_TRIGGER_HIT = "Hit";
+    const string ANIMATOR_TRIGGER_JUMP = "Jump";
     float cooldownTimer = 0f;
 
     LevelGenerator levelGenerator;
@@ -21,6 +22,17 @@ public class PlayerCollisionHandler : MonoBehaviour
     void Update()
     {
         cooldownTimer += Time.deltaTime;//CooldownTimer = CooldownTimer + Time.deltaTime;
+        Jump();
+    }
+
+    void Jump()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (cooldownTimer < collisionCooldown) return;
+            animator.SetTrigger(ANIMATOR_TRIGGER_JUMP);
+            cooldownTimer = 0f;
+        }
     }
 
     void OnCollisionEnter(Collision other)
