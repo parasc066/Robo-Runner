@@ -935,8 +935,8 @@ MonoBehaviour:
   checkpointChunkInterval: 5
   chunkLength: 10
   moveSpeed: 8
-  minMoveSpeed: 2
-  maxMoveSpeed: 20
+  minMoveSpeed: 3
+  maxMoveSpeed: 15
   minGravityZ: -22
   maxGravityZ: -2
 --- !u!4 &831323102
