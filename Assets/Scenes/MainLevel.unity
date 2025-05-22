@@ -149,9 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstaclePrefabs:
-  - {fileID: 3497344599405428948, guid: 815bb79e1e5439f4894542cc45ede48c, type: 3}
   - {fileID: 4465663221388887703, guid: 0d6f1572b01669642aa8fece23d37d84, type: 3}
-  - {fileID: 8155070860051802248, guid: 9e0fe6a40fd412843918382958f863a9, type: 3}
+  - {fileID: 474207004491202541, guid: aae207c3860db92408777d715c6f4e8b, type: 3}
+  - {fileID: 3256687601386092005, guid: 9ad02cd7b46115b47b1e7ee4d03978e6, type: 3}
+  - {fileID: 7616737491215520529, guid: c9f4fd93c78d9a347bc5d397a863d45f, type: 3}
   obstacleSpawnTime: 3
   obstacleParent: {fileID: 527152529}
   spawnWidth: 4
@@ -931,7 +932,7 @@ MonoBehaviour:
   chunkParent: {fileID: 527152529}
   scoreManager: {fileID: 1386848133}
   startingChunksAmount: 12
-  checkpointChunkInterval: 8
+  checkpointChunkInterval: 5
   chunkLength: 10
   moveSpeed: 8
   minMoveSpeed: 2
